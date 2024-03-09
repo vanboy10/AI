@@ -4,11 +4,11 @@ def text_to_speech(text):
     engine = pyttsx3.init()
 
     try:
-        # Setting properties for the speech
-        engine.setProperty('rate', 150)  # Speed of speech
-        engine.setProperty('volume', 0.9)  # Volume level
+        
+        engine.setProperty('rate', 150)  
+        engine.setProperty('volume', 0.9)  
 
-        # Speaking out the input text
+        
         engine.say(text)
         engine.runAndWait()
 
@@ -22,3 +22,5 @@ input_text = "My name vanboy im mentee Infinit Learning ."
 
 
 text_to_speech(input_text)
+
+
